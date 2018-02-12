@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>LOL PLEASE READ</header>
+<section>
+  <h1>About me</h1>
+  <p>This is a section wherein i blab about myself stuff that no one else is interested in but me. Most of the people skim through it ignoring the parts where I write abput my hobbies and things I love. Such a waste section.</p>
+</section>
+<aside>Dont know what aside does</aside>
+<section>
+  <h1>About Page</h1>
+  <p> the first line I write tells the reader what the page is about. This is when the reader realise that he wasted a minute of his life to try to read the thing.</p>
+  <article>This is an article that has been included in the section tag. More text about the page and its technoical details</article>
+</section>
+<details>
+    <summary>SECRET PLEASE CLICK</summary>
+    <p>The secret is that I hate making websites.</p>
+    <p>DONT TELL ANYONE</p>
+</details>
+<br>
+<br>
+<audio controls>
+    <source src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" type="audio/ogg">
+</audio>
+<br>
+<br>
+<video width="320" height="240" controls>
+    <source src="dog.mp4" type="video/mp4">
+</video>
+<br><br>
+
+<canvas id="myCanvas" width="250" height="500"
+style="border:1px solid #c3c3c3;">
+</canvas>
+<script>
+   
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+  var centerX = canvas.width / 2;
+  var centerY = canvas.height / 2;
+  var radius = 70;
+  var eyeRadius = 10;
+  var eyeXOffset = 25;
+  var eyeYOffset = 20;
+  
+  // draw the yellow circle
+  context.beginPath();
+  context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+  context.fillStyle = 'yellow';
+  context.fill();
+  context.lineWidth = 5;
+  context.strokeStyle = 'black';
+  context.stroke();
+    
+  // draw the eyes
+  context.beginPath();
+  var eyeX = centerX - eyeXOffset;
+  var eyeY = centerY - eyeXOffset;
+  context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+  var eyeX = centerX + eyeXOffset;
+  context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+  context.fillStyle = 'black';
+  context.fill();
+  
+  // draw the mouth
+  context.beginPath();
+  context.arc(centerX, centerY, 50, 0, Math.PI, false);
+  context.stroke();
+
+</script>
+
+<figure>
+<img src="../fb.jpg" alt="The Pulpit Rock" width="304" height="228">
+<figcaption>My face. Beautiful aint it?</figcaption>
+</figure>
+<p>there is a mark on my face now and i would like to tell you that using the <mark>mark</mark>  tags</p>
+<br><br>
+<footer>SORRY FOR WASTING YOUR TIME</footer>
+</body>
+</html>

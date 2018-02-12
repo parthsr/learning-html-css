@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Parth Bin</title>
+        <style>
+            input[type="text"]{
+                border: 2px solid #000;
+            }
+            input[type="text"].lastname{
+                border: 2px solid rgb(255, 6, 6)
+            }
+        </style>
+    </head>
+    <body>
+        <h1>my first html lol with form</h1>
+        <form action="./action_page.php">
+            <fieldset>
+                <legend>Personal Infromation gathering so that I can spam</legend>
+                
+                <lable>First name:</lable><br>
+                <input 
+                    type="text" 
+                    name="firstname" 
+                    placeholder="Parth"
+                />
+                <br>
+
+                <lable>Last name:</lable><br>
+                <input
+                    type="text" 
+                    name="lastname" 
+                    placeholder="Lol"
+                    class="lastname">
+                <br>
+
+                <lable>email:</lable><br>
+                <input
+                    type="email" 
+                    name="lastname" 
+                    placeholder="Lol">
+                <br>
+
+                <lable>Number:</lable><br>
+                <input
+                    type="number" 
+                    name="lastname" 
+                    placeholder="Lol">
+                <br>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>No use of this information but i will still ask to sound professional</legend>
+                <label>What do you ride boy?</label><br>
+                
+                <input 
+                    type="checkbox" 
+                    name="vehicle" 
+                    value="Bike">I have a bike
+                    <br>
+                
+                <input 
+                    type="checkbox" 
+                    name="vehicle" 
+                    value="Car">I have a car 
+                    <br><br>
+                
+                <label>Wassup homie?</label><br>
+                <select name="Sup?">
+                    <option value="eating">eating</option>
+                    <option value="watching tv">watching tv</option>
+                    <option value="playing game">playing game</option>
+                </select>
+                
+                <br>
+                <br>
+                <lable>Password</lable><br>
+                <input type = "password"></input>
+                
+                <br><br>
+                
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="male" checked> Male<br>
+                
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="female"> Female<br>
+                
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="other"> Other<br>
+            </fieldset>
+            <br>
+            <button onClick = "alert('hello slaves')">Greetings</button>
+            <input type="submit" value="Submit">
+          </form>           
+    </body>
+</html>
